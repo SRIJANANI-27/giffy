@@ -1,0 +1,22 @@
+
+
+nav{
+    background-color: #98e1db;
+    font-family: 'Protest Riot', sans-serif;
+    font-weight:800;
+    
+}
+
+.navbar-nav .nav-link.active {
+    color: white; 
+    font-weight: bold;
+    border-bottom: 3px solid white;
+  }
+nav a{
+    color: #ff7575;
+    font-family: "roboto";
+  font-size: 20px;
+  text-shadow: 3px 3px 3px #ababab;
+  word-spacing: 10px;
+}
+

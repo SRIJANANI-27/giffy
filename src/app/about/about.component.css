@@ -1,0 +1,150 @@
+.card {
+  width: 250px;
+  height: 250px;
+  margin-top: 27px;
+  margin: 30px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100vh;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-content {
+  padding-right: 30px;
+  
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding-right: 0;
+  }
+}
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-content {
+  padding-right: 20px;
+  animation: slideInLeft 1s forwards;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.about-content h2 {
+  color: #333;
+
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-content p {
+  color: #666;
+  line-height: 35px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: 60vh;
+  animation: fadeInRight 1s forwards;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in {
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-content,
+  .about-image img {
+    animation: fadeInUp 1s forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.about-content:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.row {
+  width: 1190px;
+}
+
+.card {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card.zoom-in {
+  opacity: 1;
+  transform: scale(1);
+}
+

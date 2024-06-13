@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row about-content d-flex flex-wrap" style="height: 400px;">
+    <div class="col-md-8">
+      <h2>About Us</h2><br>
+      <p class="fade-in">A GIF website is an online platform dedicated to hosting, sharing, and sometimes creating GIF files. These websites serve as repositories for a wide variety of GIFs, often categorized by themes, emotions, or topics. Users can typically browse through collections of GIFs, search for specific ones, and share them on social media platforms or messaging apps. Some GIF websites also provide tools for creating custom GIFs from existing images or videos.
+        These platforms have become popular destinations for internet users seeking to find and share GIFs for entertainment, expression, or communication purposes.
+      </p>
+    </div>
+        <div class="col-md-4 about-image" >
+          <img src="../../assets/images/3e087a797e15141c5a25a41a29d6e481.gif" alt="About Image"  >
+        </div>
+    </div>
+</div>
+
+<div class="container" id="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let card of cards">
+      <div class="card" [ngbTooltip]="'click here to view gifs'">
+        <img class="card-img-top img-fluid" [src]="card.image" alt="Card image" (click)="copyGifLink()">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
