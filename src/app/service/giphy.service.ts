@@ -8,6 +8,7 @@ export class GiphyService {
 
   private apiKey = "03Ll4PlVYqwLc9BGMieqVUJ7jwHAXkf3";
   private apiUrl = "https://api.giphy.com/v1/gifs";
+  // private apiUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast"
 
   constructor(private http: HttpClient) { }
 
